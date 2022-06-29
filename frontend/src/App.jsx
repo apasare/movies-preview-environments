@@ -72,17 +72,17 @@ class App extends Component {
       <div className="App">
         <header className={`Header ${this.state.fixHeader ? 'fixed' : ''}`}>
           <div className="content">
-            <div className="logo">Movies</div>
+            <div className="logo">Shows</div>
             <ul className="menu">
               <li className="selected">Home</li>
-              <li>Movies</li>
+              <li>Shows</li>
               <li>My List</li>
             </ul>
             <UserProfile user={session} />
           </div>
         </header>
         <Hero />
-        <TitleList title="Movies" titles={movies.data} loaded={movies.loaded} />
+        <TitleList title="Shows" titles={movies.data} loaded={movies.loaded} />
         <TitleList
           title={`Continue watching for ${session.name}`}
           titles={watching.data}
